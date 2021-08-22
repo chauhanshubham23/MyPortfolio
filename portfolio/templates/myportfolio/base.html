@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   {% load static %}
+  <link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static '/css/style.css' %}">
+  {% comment %} icons {% endcomment %}
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+ 
+  <title>{% block title %}{% endblock title %}</title>
+</head>
+<body id="ontop">
+
+ <a id="scrolll" href="#ontop"><i class="fas fa-arrow-up text-light d-none d-sm-block"></i></a>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand text-dark ml-2" href="/">Shubham</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-dark" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary " href="/portfolio/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary " href="/portfolio/resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary " href="/portfolio/interest">Interest</a>
+            </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-secondary " href="/portfolio/contact">Contact</a>
+              </li>  
+          </ul>
+          <div class="icons mr-3">
+              <a href="#"><i class="fab fa-twitter p-1"></i></a>
+              <a href=""><i class="fab fa-facebook p-1 facebook"></i></a>
+              <a href=""><i class="fab fa-instagram p-1 insta"></i></a>
+              <a href=""><i class="fab fa-linkedin facebook"></i></a>
+          </div>
+        </div>
+      </nav>
+      <!-- End navbar -->
+ {% for message in messages %}
+ <div class="alert alert-{{ message.tags }} alert-dismissible fade show alertmsg" role="alert" style="margin-top:6%; ">
+  <strong>Message!</strong> {{ message }}
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+ {% endfor %}
+
+
+{% block content %}
+
+{% endblock content %}
+
+  
+  <script src="{% static '/js/scroll.js' %}"></script>
+  <script src="{% static '/js/jquery.js' %}"></script>
+  <script src="{% static '/js/bootstrap.min.js' %}"></script>
+</body>
+</html>

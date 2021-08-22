@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/* About section */
+.aboutheading,.skillheading {
+    margin-top: 8%;
+    text-align: center; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.aboutpara,.skillpara{
+      font-family: 'Raleway', sans-serif;
+}
+.border_bottm{
+    border-bottom: 3px solid rgb(13, 173, 173); 
+}
+.image1{
+    height: 50vh;
+    width: 100%; 
+} 
+.webdeveloper{
+   font-family: 'Raleway', sans-serif;
+   color: #3A393A;
+   font-weight:bold;
+   
+}
+
+.cssanimation1, .cssanimation1 span {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.cssanimation1 span { display: inline-block }
+
+.fadeInBottom1 { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translatey(40%);
+    }
+    to { opacity: 1 }
+}
+
+/* progress bar */
+
+.progress{
+    
+    border-radius: 15px;
+    margin-bottom: 30px;
+    overflow: visible;
+    position: relative;
+}
+.progress .progress-bar{
+    border-radius: 15px;
+    box-shadow: none;
+    position: relative;
+    animation: animate-positive 2s;
+}
+.progress .progress-icon,
+.progress .progress-value{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 40px;
+    background: #fff;
+    border: 7px solid #5bc0de;
+    font-size:15px;
+    font-weight: 600;
+    color: #5bc0de;
+    position: absolute;
+    top: -17px;
+    right: -5px;
+}
+.progress .progress-icon{
+    right: auto;
+    left: -5px;
+}
+.progress.info .progress-icon,
+.progress.info .progress-value{
+    border: 5px solid #5bc0de;
+    color: #5bc0de;
+}
+
+
+@-webkit-keyframes animate-positive{
+    0%{ width: 0; }
+}
+@keyframes animate-positive{
+    0%{ width: 0; }
+}
+/* Carousel fevourite tutorial */
+.tutorialimg{
+    width: 15%;
+    height: 26vh;
+    border-radius: 50%;
+    box-shadow: 0px 0px 7px 3px rgba(96,90,90,0.77);
+-webkit-box-shadow: 0px 0px 7px 3px rgba(96,90,90,0.77);
+-moz-box-shadow: 0px 0px 7px 3px rgba(96,90,90,0.77);
+}
+.carousel-indicators li {
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    border: 1px solid #5bc0de;
+}
+.carousel-indicators .active {
+          background-color: #5bc0de;
+            }
+.carousel-indicators {
+    bottom: -50px;
+}
+.carouselcontainer{
+    margin-bottom: 10%;
+}
+.tutorialpara{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.tutorialheadingpara{
+    color: rgb(48, 47, 47);
+    
+}
+.doublecouts{
+    color: #A1F0EA;
+    font-size: 20px;
+}
+
+/* Mobile width */
+@media screen and (max-width:720px){
+    .aboutheading{
+        margin-top: 28%;
+    }
+    .tutorialimg{
+        border-radius: 50%;
+        height: 20vh;
+        width: 40%;
+    }
+    .webdeveloper{
+        margin-top: 7%;
+        text-align: center;
+    }
+    .carouselcontainer{
+        margin-bottom: 17%;
+    }
+}

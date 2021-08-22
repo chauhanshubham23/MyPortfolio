@@ -1,0 +1,64 @@
+{% extends 'myportfolio/base.html' %}
+{% block title %}Contact us{% endblock title %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/contact_style.css' %}">
+
+    <div class="container">
+    <div class="cssanimation1 sequence1 fadeInBottom1">
+     <h1 class=" contactheading"><span class="border_bottm">Contact me</span></h1>
+        <p class="text-center text-secondary mt-4 mb-4 contactpare"><strong>Get in touch!</strong> Want to get in touch? We'd love to here from you. Here's how you can reach me. our questions and comments are most important to us.<span class="d-none d-sm-block"> Select a topic below, or reach us by phone or email. We've got everything covered for your needs.</span> </p>
+
+          <iframe class="mt-5 w-100 mb-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15088.162047492156!2d73.08603711662087!3d19.017936430500917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e9d390c16fad%3A0x45a26096b6c171fd!2sKamothe%2C%20Panvel%2C%20Navi%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1629022060582!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+         <div class="row">
+           <div class="col-sm-4">
+             <div class="contacticon">
+              
+                  <i class="fas fa-map-marker-alt"></i>
+              <h4 class="tag mt-2">Location:</h4>
+              <p class="contactpara text-secondary"><i>B/210 Vrindavan Complex, sec-8, Kamothe, Navi mumbai</i></p>
+                
+              <i class="far fa-envelope"></i>
+              <h4 class="tagemail mt-2">Email:</h4>
+              <p class="text-secondary contactpara"><a href="mailto:subhamchauhan1586@gmail.com" class="text-secondary">subhamchauhan1586@gmail.com</a></p>
+             
+              <i class="fas fa-mobile-alt"></i>
+              <h4 class="tagcall mt-2">Call:</h4>
+              <p class="text-secondary contactpara"><a href="tel:+91 9877609821" class="text-secondary">+91 7651925211</a></p>
+            </div>
+           </div>
+           <div class="col-sm-8">
+            <form action="/portfolio/contact/" method="post">{% csrf_token %}
+              <div class="form-row">
+                <div class="form-group green-border col-md-6">
+                  <label for="name">Enter name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group green-border col-md-6">
+                  <label for="email">Email <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Your email" required>
+                </div>
+              </div>
+              <div class="form-group green-border">
+                <label for="subject">Subject <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Regarding subject" required>
+              </div>
+              <div class="form-group green-border">
+                <label for="Message">Message <span class="text-danger">*</span></label>
+                <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+              </div>
+               <div class="form-group green-border">
+                <button type="submit" class="btn btn-info mx-auto d-block sendmessage ">Send message</button>
+              </div>
+            </form>
+           </div>
+         </div>
+    </div>
+    </div>
+
+
+    <!-- footer -->
+    {% include 'myportfolio/footer.html' %}
+{% endblock content %}
+    

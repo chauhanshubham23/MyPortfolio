@@ -1,0 +1,121 @@
+.background{
+    background-color: #DADAD2;
+    height: 96vh;
+}
+.image{
+    height: 60vh; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    float: right;
+    margin-top: 100px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    box-shadow: 0px 0px 7px 3px rgba(96,90,90,0.77);
+-webkit-box-shadow: 0px 0px 7px 3px rgba(96,90,90,0.77);
+-moz-box-shadow: 0px 0px 7px 3px rgba(96,90,90,0.77);
+   }
+.name{
+    margin-top: 15%;
+    text-align: center;
+    margin-left: 7%;
+}
+.myname{
+    font-family: Arial Rounded MT;
+    font-size: 50px;
+   }
+   .para{
+       font-size: 22px;
+   }
+   
+   .defaultbtn{
+       border-radius: 20px;
+       width: 30%;
+     
+       
+   }
+
+   /* Text animation */
+
+   .fade-in {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+  }
+  
+  
+  @keyframes fadeIn{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  /* The style below is just for the appearance of the example div */
+ /* mobile width */
+
+ @media screen and (max-width:720px){
+    .image{
+        height: 32vh;
+        width: 67%; 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        float: inherit;
+        margin-left: 16%;
+        margin-top: 110px;
+        box-shadow: 0px 0px 7px 3px rgba(96,90,90,0.77);
+        -webkit-box-shadow: 0px 0px 7px 3px rgba(96,90,90,0.77);
+        -moz-box-shadow: 0px 0px 7px 3px rgba(96,90,90,0.77);
+        border-radius: 50%;
+        
+       }
+       .myname{
+        font-size: 30px;
+    }
+    .defaultbtn{
+        border-radius: 20px;
+        width: 40%;
+        
+        
+    }
+ }

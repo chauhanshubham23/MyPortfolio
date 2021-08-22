@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar-dark{
+    background-color: #CFCFC9;
+}
+.navbar-nav{
+    text-align: center;
+}
+.navbar-brand{
+    font-family: 'Style Script', cursive;
+    font-size: 33px;
+}
+
+ul li a{
+    font-family: 'Roboto', sans-serif;
+    transition: 0.5s ease;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;    
+}
+ ul li a:hover{
+     border-bottom:2px solid rgb(48, 150, 153);
+     
+}
+.icons a .fab{
+    color: #8D8D7B;
+    font-size: 22px;
+}
+.icons a .fab:hover{
+    color: rgb(117, 209, 216);
+    transition: 0.6s;
+}
+.icons a .fab.facebook:hover{
+    color: rgb(13, 10, 163);
+    transition: 0.6s;
+}
+.icons a .fab.insta:hover{
+    color: rgb(179, 28, 141);
+    transition: 0.6s;
+}
+/* end nav */
+
+
+  /* scroll top */
+  html {scroll-behavior: smooth;}
+  #scrolll {
+ 
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  }
+  #scrolll i.fas{
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.6em 0.7em;
+    background-color: rgb(48, 150, 153);
+  }

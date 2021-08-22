@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+.intereheading {
+    margin-top: 10%;
+    text-align: center; 
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;   
+}
+.interepara{
+    font-family: 'Raleway', sans-serif;
+}
+.border_bottm{
+    border-bottom: 3px solid rgb(13, 173, 173); 
+}
+.interecticons{
+    font-size: 42px;
+    color: #eee;
+    margin-top: 32%;   
+}
+.htmlradius{
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(to right top, #7e5cf1, #8851f1, #9244f0, #9d32ee, #a912eb);
+}
+.cssradius{
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(to right top, #088cb0, #169cba, #28acc4, #3bbdcc, #4fcdd3);
+}
+.jsradius{
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(to right top, #f16328, #f47431, #f6843b, #f99346, #fba153);
+}
+
+.databaseradius{
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(to right top, #0f2383, #12328d, #1a4096, #244e9e, #305ca5);
+}
+.pythonradius{
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(to right top, #226996, #0092b4, #00b9a5, #3cd86d, #d4ea13);
+}
+.cradius{
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(to right top, #dd16b7, #ea2ca9, #f3419d, #f85594, #fa688e);
+}
+.bookradius{
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(to right top, #00c851, #00ac5f, #009063, #0d735e, #2d5750);
+}
+.travelradius{
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(to right top, #f44889, #f13e73, #eb365d, #e23146, #d83030);
+}
+.crickradius{
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(to right top, #27283e, #3c2845, #542443, #692037, #762424);
+}
+.footbolradius{
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(to right top, #0d3fe3, #0058ed, #006ef4, #0081f8, #0894f9);
+}
+.musicradius{
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(to right top, #d10c4b, #dc2349, #e63447, #f04445, #f95242);
+}
+.runningradius{
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(to right top, #d1ce0c, #adaf22, #8c912a, #6d742d, #52572d);
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins|Ubuntu&display=swap');
+
+
+.box {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+}
+.rowbottom{
+    margin-bottom: 10%;
+}
+
+.our-services {
+    margin-top: 75px;
+    padding-bottom: 30px;
+    padding: 0 60px;
+    min-height: 198px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all .4s ease-in-out;
+    box-shadow: 0px 0px 15px -1px #CFCFC9;
+    -webkit-box-shadow: 0px 0px 15px -1px rgb(222, 223, 213);
+    -moz-box-shadow: 0px 0px 15px -1px rgb(222, 223, 213);
+}
+
+.our-services .icon {
+    margin-bottom: -21px;
+    transform: translateY(-50%);
+    text-align: center
+}
+
+.our-services:hover h4,
+.our-services:hover p {
+    color: #fff
+}
+
+.speedup:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to right top, #088cb0, #169cba, #28acc4, #3bbdcc, #4fcdd3);
+}
+
+.settings:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(to right top, #7e5cf1, #8851f1, #9244f0, #9d32ee, #a912eb);
+}
+
+.privacy:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(to right top, #f16328, #f47431, #f6843b, #f99346, #fba153);
+}
+
+.backups:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(to right top, #0f2383, #12328d, #1a4096, #244e9e, #305ca5);
+}
+
+.ssl:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(to right top, #226996, #0092b4, #00b9a5, #3cd86d, #d4ea13);
+}
+
+.database:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(to right top, #dd16b7, #ea2ca9, #f3419d, #f85594, #fa688e);
+}
+.books:hover{
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(to right top, #00c851, #00ac5f, #009063, #0d735e, #2d5750);
+}
+.travel:hover{
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(to right top, #f44889, #f13e73, #eb365d, #e23146, #d83030);
+}
+.cricket:hover{
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(to right top, #27283e, #3c2845, #542443, #692037, #762424);
+}
+.footbol:hover{
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(to right top, #0d3fe3, #0058ed, #006ef4, #0081f8, #0894f9);
+}
+.music:hover{
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(to right top, #d10c4b, #dc2349, #e63447, #f04445, #f95242);
+}
+.running:hover{
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(to right top, #d1ce0c, #adaf22, #8c912a, #6d742d, #52572d);
+}
+
+
+
+
+
+
+
+
+.cssanimation, .cssanimation span {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.fadeinbottom { animation-name: fadeinbottom }
+@keyframes fadeinbottom {
+    from {
+        opacity: 0;
+        transform: translatey(40%);
+    }
+    to { opacity: 1 }
+}
+
+
+
+
+
+
+
+/* mobile width */
+@media screen and (max-width:720px) {
+    .intereheading {
+        margin-top: 32%;
+       font-size: 25px;  
+    }
+}

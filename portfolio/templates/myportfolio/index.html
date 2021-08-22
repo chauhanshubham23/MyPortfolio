@@ -1,0 +1,30 @@
+{% extends 'myportfolio/base.html' %}
+{% block title %}home-page{% endblock title %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/index_style.css' %}">
+
+  <section>
+         <div class="background">
+          <div class="container">
+           <div class="row">
+             <div class="col-sm-12 col-md-12">
+              <img src="{% static 'images/man1.png'%}" class="image" alt="">
+              <div class="name float-left">
+                 <div class="style fade-in">
+                     <h1 class=" myname"> <span class="text-info">Hi</span>, I'm <br>Shubham Chauhan</h1>
+               <p class="para text-secondary">I'm a full-stack developer from india.</p>
+               <a href="/portfolio/about" class="btn btn-info mt-3 defaultbtn">About Me</a>
+              </div>
+              </div>
+             </div>
+             </div>
+          </div>
+         </div>
+     </section>
+     {% include 'myportfolio/footer.html' %}
+
+
+{% endblock content %}
+
+
